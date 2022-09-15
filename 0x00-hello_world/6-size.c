@@ -1,5 +1,5 @@
 #include <stdio.h>
-/**i
+/**
 * main - Entry point
 * print some char to the screen
 * Return: Always 0 (Success)i
