@@ -8,7 +8,7 @@ int _putchar(char c);
 
 void  print_numbers(void)
 {
-	int i = 48;
+	int i = 47;
 
 	char c = '\n';
 
