@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-    char c;
+	char c;
 
-    c = 't';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'R';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+	c = 't';
+	printf("%c: %d\n", c, _isupper(c));
+	c = 'R';
+	printf("%c: %d\n", c, _isupper(c));
+	return (0);
 }
