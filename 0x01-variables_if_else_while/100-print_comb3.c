@@ -18,8 +18,8 @@ int main(void)
 				continue;
 			putchar(dgt1 + '0');
 			putchar(dgt2 + '0');
-			if (dgt1 == 9 && dgt2 == 9)
-				break;
+			if (dgt1 == 8 && dgt2 == 9)
+				continue;
 			putchar(',');
 			putchar(' ');
 		}
