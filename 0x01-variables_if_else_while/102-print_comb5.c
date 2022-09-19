@@ -21,17 +21,25 @@ int main(void)
 		for (dgt2 = 0; dgt2 <= 9; dgt2++)
 		{
 			cn1++;
-			cn2 = 0;
+			/* cn2 = 0 
 			putchar(dgt1 + '0');
 			putchar(dgt2 + '0');
 			putchar(' ');
+			*/
 			for (dgt3 = 0; dgt3 <= 9; dgt3++)
 			{
+				cn2 = 0;
 				for (dgt4 = 0; dgt4 <= 9; dgt4++)
 				{
 					cn2++;
 					if (cn1 >= cn2)
+					{
+						cn1 = 0;
 						continue;
+					}
+					putchar(dgt1 + '0');
+					putchar(dgt2 + '0');
+					putchar(' ');
 					putchar(dgt3 + '0');
 					putchar(dgt4 + '0');
 					if (dgt1 == 9 && dgt2 >= 8 && dgt3 == 9 && dgt4 == 9)
@@ -39,7 +47,7 @@ int main(void)
 						dgt2 = 10;
 						dgt3 = 9;
 						dgt1 = 10;
-						break;
+						continue;
 					}
 					putchar(',');
 					putchar(' ');
