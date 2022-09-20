@@ -5,22 +5,21 @@
 *Return:Always return 0
 */
 int _strlen(char *s);
-int _putchar(char c);
 void rev_string(char *s)
 {
 	int len, i;
-	char *revs;
+	char *temp;
 
 	len = _strlen(s);
 	i = 0;
-	revs = "\0";
-	while (len >= 0)
+	temp = s; 
+	while (len)
 	{
-		*(revs + i) = s[len];
-		len--;
+		temp[i] = s[len];
 		i++;
+		len--;
 	}
-	s = revs;
+	s = temp; 
 }
 
 /**
