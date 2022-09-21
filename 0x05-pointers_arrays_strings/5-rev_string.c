@@ -7,21 +7,19 @@
 int _strlen(char *s);
 void rev_string(char *s)
 {
-	int len, i;
-	char *temp;
+	int i, j;
+	char temp;
 
-	len = _strlen(s);
 	i = 0;
-	temp = s; 
-	while (len > 0)
-	{
-		*(temp + i) = s[len - 1];
+	j  = _strlen(s) - 1;
+	do {
+		temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
 		i++;
-		len--;
-	}
-	s = temp; 
+		j--;
+	} while (j >= i);
 }
-
 /**
 *_strlen - return lenght of char array
 *@s: input char (*) s
