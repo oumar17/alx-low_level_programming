@@ -3,6 +3,7 @@
 *_strcat -concatenate two string
 *@*dest: input char (*) dest
 *@*src: inputchar (*) src
+*@s: input char* to strlen
 *Return: char (*) string
 */
 int _strlen(char *s);
