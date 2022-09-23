@@ -7,11 +7,11 @@
 char *cap_string(char *str)
 {
 	int j, i;
-	char set[] = "\n ,, ;\t, ., !, ?, \"(){}";
+	char set[] = "\n,;\t.!?\"(){}";
 
 	for (j = 0; str[j] != '\0'; j++)
 	{
-		for (i = 0; i <= 23; i++)
+		for (i = 0; i <= 15; i++)
 		{
 			if  (set[i] == str[j] &&  str[j + 1] >= 'a' && str[j + 1] <= 'z')
 			{
