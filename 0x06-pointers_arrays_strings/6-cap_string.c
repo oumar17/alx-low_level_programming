@@ -1,4 +1,3 @@
-#include <stdio.h>
 /**
 * *cap_string - capitalize
 *@str: input char (*) dest
