@@ -14,9 +14,17 @@ char *cap_string(char *str)
 		{
 			if  (set[i] == str[j] &&  str[j + 1] >= 'a' && str[j + 1] <= 'z')
 			{
+				if(set[i] == '\t')
+				{
+					str[j] = ' ';
+				} else
+				{
 				str[j + 1] = str[j + 1] - 32;
 				j++;
+			
+				}
 			}
+
 		}
 	}
 	return (str);
