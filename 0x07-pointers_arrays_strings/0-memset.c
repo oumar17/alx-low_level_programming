@@ -6,7 +6,7 @@
  *@s: the address of memory to print
  *@b: byt to write
  *@n: input int
- * Return: *s
+ *Return: *s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
